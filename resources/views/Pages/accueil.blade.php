@@ -1,225 +1,401 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
 
-  <title>Accueil</title>
-<!--
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        
+        <title>ZAKA</title>
 
-Template 2101 Insertion
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/images/icon.jpg"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-http://www.tooplate.com/view/2101-insertion
+		<!--flat icon css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
 
--->
-  <!-- load CSS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">        <!-- Google web font "Open Sans" -->
-  <link rel="stylesheet" href="style/bootstrap.min.css">                                            <!-- https://getbootstrap.com/ -->
-  <link rel="stylesheet" href="style/fontawesome-all.min.css">                                      <!-- Font awesome -->
-  <link rel="stylesheet" href="style/tooplate-style.css">                                           <!-- Templatemo style -->
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
 
-  <script>
-    var renderPage = true;
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        
+		<link rel="stylesheet" href="{{'assets/bootstrap/css/bootstrap.min.css'}}">
+		<!-- bootsnav-->
+		<!-- <link rel="stylesheet" href="assets/css/bootsnav.css" > -->
+		<link rel="stylesheet" href="{{'assets/css/bootsnav.css'}}">
+        
+        <!--style-->
+        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+		<link rel="stylesheet" href="{{'assets/css/style.css'}}">
+        
+        <!--responsive-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        
+    </head>
+	
+	<body>
+		
+		
+		
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Debut de nav -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
 
-    if (navigator.userAgent.indexOf('MSIE') !== -1
-      || navigator.appVersion.indexOf('Trident/') > 0) {
-      /* Microsoft Internet Explorer detected in. */
-      alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
-      renderPage = false;
-    }
-  </script>
+			        <div class="container">
 
-</head>
+			           
+			            <div class="navbar-header">
+			                
+			                <a class="navbar-brand" href="index.html">zaka</a>
+			            </div>	           
+			           
+			            <div>
+			                <ul class="mb-4" data-in="fadeInDown" data-out="fadeOutUp">
+								
+									<li class="p-5" ><a href="#ajouter">Ajouter</a></li>
+									<li class="p-5"><a href="#liste">Liste</a></li>
+									<li class="button">
+									<a href="/deconnexion" class="p-2 btn btn-primary">Deconnexion</a>
+								</li>							
+			                </ul>
+			            </div>
+			        </div>
+			    </nav>
+			    <!-- Fin de nav -->
+			</div>
 
-<body>
+		    <div class="clearfix"></div>
 
-  <!-- Loader -->
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-  </div>
+		</header>
+		
+	
+		<section id="welcome-hero" class="welcome-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<h2>ZAKA</h2>
+							<p>GERER VOS MAISONS EN LOCATION</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-  <div class="tm-main">
+		</section>
+		
 
-    <div class="tm-welcome-section">
-      <div class="container tm-navbar-container">
-        <div class="row">
-          <div class="col-xl-12">
-            <nav class="navbar navbar-expand-sm">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a href="accueil.html" class="nav-link tm-nav-link tm-text-white active">Accueil</a>
-                </li>
-                <li class="nav-item">
-                  <a href="/ajout" class="nav-link tm-nav-link tm-text-white">Ajouter un livre</a>
-                </li>
-                <li class="nav-item">
-                  <a href="/liste" class="nav-link tm-nav-link tm-text-white">Liste des livres</a>
-                </li>
-                <li class="nav-item">
-                  <a href="/contact" class="nav-link tm-nav-link tm-text-white">A Propos</a>
-                </li>
-                <li class="button">
-                  <a href="/deconnexion" class="nav-link tm-nav-link tm-text-white">Deconnexion</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
+	
+		<section id="ajouter" class="education">
+			<div class="section-heading text-center">
+				<h2>Ajouter</h2>
+				<section class="bg">
+					<div class="container-fluid mt-5">
+					  <div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xd-12 px-20 mb-5">
+						  <div class="sectright"> 
+							<img class="container-fluid p-0" src="img/agence.jpg" alt="">
+						  </div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xd-12">
+						  <h3 class="text-center">AJOUTER UN LOCATAIRE</h3>
+						  <form class="col-lg-12 col-md-12 col-sm-12 col-xd-12 mt-5  mb-5 pt-3" action="/liste" method="post">
+						  {{ csrf_field() }}
+						  <div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-white">Nom:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="nom" class="form-control form-control-lg" id="colFormLabelLg" required>
+							  </div>
+							</div>
+							<div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-white">Prenom:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="prenom" class="form-control form-control-lg" id="colFormLabelLg" required>
+							  </div>
+							</div>
+							<div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg  bg-white b">Contact:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="contact" class="form-control form-control-lg" id="colFormLabelLg" required>
+							  </div>
+							</div>
+							<div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-white ">Coordonées de la cour:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="coord_cour" class="form-control form-control-lg border" id="colFormLabelLg"
+								  required>
+							  </div>
+							</div>
+							<div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-white ">Coordonées de la maison:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="coord_maison" class="form-control form-control-lg border" id="colFormLabelLg"
+								  required>
+							  </div>
+						  		</div>
+								  <div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-white ">Role:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="role" class="form-control form-control-lg border" id="colFormLabelLg"
+								  required>
+							  </div>
+						  		</div>
+						  			</div>
 
-      <div class="container text-center tm-welcome-container">
-        <div class="tm-welcome">
-          <i class="fas tm-fa-big fa-book tm-fa-mb-big"></i>
-          <h1 class="text-uppercase mb-3 tm-site-name">Bibliothèque SAVAN</h1>
-          <p class="tm-site-description"></p>
-        </div>
-      </div>
+							<div class="text-center" style="margin-left: 50%;">
+							  <button type="submit" class="btn btn-primary  mt-10 mb-3">Ajouter</button>
+							</div>
+						  </form>
+						</div>
+					  </div>
+					</div>
+				  </section>
+			
+				 
+				 
+				  <section id="ajouter" class="education">
+			<div class="section-heading text-center">
+				<section class="bg">
+					<div class="container-fluid mt-5">
+					  <div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xd-12 px-20 mb-5">
+						  <div class="sectright"> 
+							<img class="container-fluid p-0" src="img/mm.jpg" alt="">
+						  </div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xd-12">
+						  <h3 class="text-center">AJOUTER UNE COUR</h3>
+						  <form class="col-lg-12 col-md-12 col-sm-12 col-xd-12 mt-5  mb-5 pt-3" action="/cour" method="post">
+						  {{ csrf_field() }}
+						  <div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-whkite">Cour commune ou cour unique:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="type_cour" class="form-control form-control-lg" id="colFormLabelLg" required>
+							  </div>
+							</div>
+							<div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-white">Coordonées de la cour:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="coord_cour" class="form-control form-control-lg" id="colFormLabelLg" required>
+							  </div>
+							</div>
+							<div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg  bg-white b">Coordonées de la maison:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="coord_maison" class="form-control form-control-lg" id="colFormLabelLg" required>
+							  </div>
+							</div>
+							<div class="form-group row pl-2">
+							  <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-white ">Nom et Prenom du bailleur:</label>
+							  <div class="col-sm-8">
+								<input type="text" name="coord_bailleur" class="form-control form-control-lg border" id="colFormLabelLg"
+								  required>
+							  </div>
+							</div>
+							<div class="form-group row pl-2">
+							 	 <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label-lg bg-white ">Nom et Prenom du locataire:</label>
+								<div class="col-sm-8">
+									<input type="text" name="coord_locataire" class="form-control form-control-lg border" id="colFormLabelLg"
+									required>
+								</div>
+						  	</div>
+		
+						  			</div>
 
-    </div>
+							<div class="text-center" style="margin-left: 50%;">
+							  <button type="submit" class="btn btn-primary  mt-10 mb-3">Ajouter</button>
+							</div>
+						  </form>
+						</div>
+					  </div>
+					</div>
+				  </section>
+			
 
-      <center><h1 class="" >Livres les plus lus cette semaine</h1></center>
+		<!--Liste-->
+		<div class="container">
+		<section id="liste" class="skills" mt-10>
+				<div class="skill-content">
+					<div class="section-heading text-center">
+						<h2>Liste des locataires et bailleurs</h2>
+					
+				<div class="table table-responsive p-0 mt-5">
 
-      <div class="row tm-albums-container grid">
-        <div class="col-sm-6 col-12 col-md-6 col-lg-3 col-xl-3 tm-album-col">
-          <figure class="effect-sadie">
-            <img src="img/info.jpg" alt="Image" class="img-fluid">
-            <figcaption>
-            
-              <p>La règle d'or de la conduite est la tolérance mutuelle, car nous ne penserons jamais tous de la même façon, nous ne verrons qu'une partie de la vérité et sous des angles différents.</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-sm-6 col-12 col-md-6 col-lg-3 col-xl-3 tm-album-col">
-          <figure class="effect-sadie">
-            <img src="img/cult.jpg" alt="Image" class="img-fluid">
-            <figcaption>
-             
-              <p>Dans la vie on ne fait pas ce que l'on veut mais on est responsable de ce que l'on est.</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-sm-6 col-12 col-md-6 col-lg-3 col-xl-3 tm-album-col">
-          <figure class="effect-sadie">
-            <img src="img/philosophie.jpg" alt="Image" class="img-fluid">
-            <figcaption>
-              
-              <p>La vie, c'est comme une bicyclette, il faut avancer pour ne pas perdre l'équilibre.</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-sm-6 col-12 col-md-6 col-lg-3 col-xl-3 tm-album-col">
-          <figure class="effect-sadie">
-            <img src="img/hist.jpg" alt="Image" class="img-fluid">
-            <figcaption>
-             
-              <p>La nature fait les hommes semblables, la vie les rend différents.</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+					<table class="table bg-dark">
+							
+						<thead class="text-white">
+							<tr class="btn-sm text-center">
+									<th scope="col">Nom</th>
+									<th scope="col">Prenom</th>
+									<th scope="col">Contact</th>
+								    <th scope="col">Coordonées de la cour</th>
+									<th scope="col">Coordonées de la maison</th>
+									<th scope="col">Role</th>
+									<th scope="col">Option</th>
+								</tr>
+						</thead>
+							<tbody>
+							
+							@foreach($locataires as $locataire) 
+							<div class="">
+							<tr class=" tablecolor text-white">
+								<td>{{$locataire->nom}}</td>
+								<td>{{$locataire->prenom}}</td>
+								<td>{{$locataire->contact}}</td>
+								<td>{{$locataire->coord_cour}}</td>
+								<td>{{$locataire->coord_maison}}</td>
+								<td>{{$locataire->role}}</td>
+								<td>
+								<form action="{{route('liste.destroy' , $locataire->id)}}" method="POST"  onclick='return confirm("Etes vous sur de vouloir supprimer ?");'> 
+									@csrf 
+									@method('DELETE')
+									<button  class='btn btn-danger'>Supprimer</button>
+								</form>
+								</td>
+							
+							</tr>
+							</div>
+							@endforeach
+							</tbody>
 
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="tm-tag-line">
-          <h2 class="tm-tag-line-title">La lecture, plus qu'une passion</h2>
-          </div>
-        </div>
-      </div>
+					</table>
 
-      <div class="row mb-5">
-        <div class="col-xl-12">
-          <div class="media-boxes">
-            <div class="media">
-              <img src="img/exi.jpg" alt="Image" class="mr-3">
-              <div class="media-body tm-bg-gray">
-                <div class="tm-description-box">
-                  <h5 class="tm-text-blue"></h5>
-                  <p class="mb-0">Le club Maintenant est créé à la libération de la France. Il est animé par Jacques Calmy et Marc Beigbeder qui organisent à la Salle des Centraux, à Paris, le 29 octobre 1945 à 20 heures 30, une conférence dont Jean-Paul Sartre est l'orateur. Le thème choisi, avec le conférencier est : « L'existentialisme est un humanisme ». <a href="https://plus.google.com/+tooplate" target="_parent"></a>.</p>
-                </div>
-                <div class="tm-buy-box">
-                  <a href="#" class="tm-bg-blue tm-text-white tm-buy">Lire la suite</a>
-                  <span class="tm-text-pink tm-price-tag" ></span>
-                </div>
-              </div>
-            </div>
+				</div>
 
-            <div class="media">
-              <img src="img/all.jpg" alt="Image" class="mr-3">
-              <div class="media-body tm-bg-pink-light">
-                <div class="tm-description-box">
-                  <h5 class="tm-text-pink"></h5>
-                  <p class="mb-0">« L'allée du Roi » de Françoise Chandernagor. Ce sont les mémoires imaginaires de Madame de Maintenon (1635-1719), qui fut la seconde et dernière épouse du roi Louis XIV, après la reine Marie Thérèse d'Autriche. Louis XIV, l'épousa secrètement dans la nuit du 9 au 10 octobre 1683. </p>
-                </div>
-                <div class="tm-buy-box">
-                  <a href="#" class="tm-bg-pink tm-text-white tm-buy">Lire la suite</a>
-                  <span class="tm-text-pink tm-price-tag" ></span>
-                </div>
-              </div>
-            </div>
 
-            <div class="media">
-              <img src="img/inf.png" alt="Image" class="mr-3">
-              <div class="media-body tm-bg-gray">
-                <div class="tm-description-box">
-                  <h5 class="tm-text-blue"></h5>
-                  <p class="mb-0">Les quatre parties de cet ouvrage correspondent aux quatre fondamentaux de l'enseignement de l'informatique dans l'enseignement supérieur : les mathématiques pour l'informatique, l'algorithmique et la programmation, l'architecture système, et les bases de données.
-                      - La partie "Mathématiques" s'appuie sur les acquis de Terminale,
-                      - La partie "Programmation" présente les notions de base du code et utilise le langage Python,</p>
-                </div>
-                <div class="tm-buy-box">
-                  <a href="#" class="tm-bg-blue tm-text-white tm-buy">Lire la suite</a>
-                  <span class="tm-text-pink tm-price-tag"></span>
-                </div>
-              </div>
-            </div>
 
-            <div class="media">
-              <img src="img/harry.jpg" alt="Image" class="mr-3">
-              <div class="media-body tm-bg-pink-light">
-                <div class="tm-description-box">
-                  <h5 class="tm-text-pink"></h5>
-                  <p class="mb-0">Orphelin, le jeune Harry Potter peut enfin quitter ses tyranniques oncle et tante Dursley lorsqu'un curieux messager lui révèle qu'il est un sorcier. À 11 ans, Harry va enfin pouvoir intégrer la légendaire école de sorcellerie de Poudlard, y trouver une famille digne de ce nom et des amis, développer ses dons, et préparer son glorieux avenir.</p>
-                </div>
-                <div class="tm-buy-box">
-                  <a href="#" class="tm-bg-pink tm-text-white tm-buy">Lire la suite</a>
-                  <span class="tm-text-pink tm-price-tag" ></span>
-                </div>
-              </div>
-            </div>
-          </div> <!-- media-boxes -->
-        </div>
-      </div>
-    
-      </div>
-      <footer class="row">
-        <div class="col-xl-12">
-          <p class="text-center p-4">Copyright &copy; <span class="tm-current-year">2021</span> SAVAN
-          
-        </p>
-        </div>
-      </footer>
-    </div> <!-- .container -->
+				</div>
+			</div>	
 
-  </div> <!-- .main -->
+		
+		
+		</section>
+		</div>
 
-  <!-- load JS -->
-  <script src="js/jquery-3.2.1.slim.min.js"></script> <!-- https://jquery.com/ -->
-  <script>
+		<div class="container">
+		<section id="liste" class="skills" mt-10>
+				<div class="skill-content">
+					<div class="section-heading text-center">
+						<h2>Liste des cours/maisons</h2>
+					
+				<div class="table table-responsive p-0 mt-5">
 
-    /* DOM is ready
-    ------------------------------------------------*/
-    $(function () {
+					<table class="table table-hover bg-dark">
+							
+						<thead class="text-white">
+							<tr class="btn-sm text-center">
+									<th scope="col"> Type de cour</th>
+									<th scope="col">Coordonées de la cour</th>
+									<th scope="col">Coordonées de la maison</th>
+								    <th scope="col">Nom et prenom du bailleur</th>
+									<th scope="col">Nom et prenom du locataire</th>
+									<th scope="col">Option</th>
+								</tr>
+						</thead>
+							<tbody>
+							
+							@foreach($cours as $cour) 
+							<tr class="text-center tablecolor text-white">
+								<td>{{$cour->type_cour}}</td>
+								<td>{{$cour->coord_cour}}</td>
+								<td>{{$cour->coord_maison}}</td>
+								<td>{{$cour->coord_bailleur}}</td>
+								<td>{{$cour->coord_locataire}}</td>
+								<td>
+								<a href="delete/{{$cour->id}}" onclick='return confirm("Etes vous sur de vouloir supprimer ?");'>  <button type="button"  class='btn btn-danger'>Supprimer</button></a>
+								</td>
+							
+							</tr>
+							@endforeach
+							</tbody>
 
-      if (renderPage) {
-        $('body').addClass('loaded');
-      }
+					</table>
 
-      $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
-    });
+				</div>
 
-  </script>
-</body>
+
+
+				</div>
+				   	</div>	
+
+		
+		
+		</section>
+		</div>
+
+
+		<!--Liste -->
+
+		
+		<!--footer-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+						&copy; ZAKA. designé et developpé par AYMAR
+					</p>
+				</div>
+			</div>
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+				
+			</div>
+			
+        </footer>
+		<!--footer-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="assets/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+
+		
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
 </html>

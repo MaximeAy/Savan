@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\liste;
-use App\livre;
+use App\locataires;
 use Illuminate\Support\Facades\DB;
 
 class ListeController extends Controller
@@ -16,8 +16,8 @@ class ListeController extends Controller
      */
     public function index()
     {
-        $livres = livre::all();
-        return view('/Pages.liste',compact('livres'));
+        $locataires = liste::all();
+        return view('/Pages.accueil',compact('locataires'));
     }
 
     /**
@@ -37,31 +37,28 @@ class ListeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+    
     {
         request() ->validate([
 
-            'nom_livre' =>['required'],
-            'nom_auteur' =>['required'],
-            'prenom_auteur' =>['required'],
-            'pays' =>['required'],
-            'date_parution' =>['required'],
-            'type' =>['required'],
+            'nom' =>['required'],
+            'prenom' =>['required'],
+            'contact' =>['required'],
+            'coord_cour' =>['required'],
+            'coord_maison' =>['required'],
     
         ]);
-        $livres = new liste();
-        $livres-> nom_livre = request('nom_livre');
-        $livres-> nom_auteur = request('nom_auteur');
-        $livres-> prenom_auteur = request('prenom_auteur');
-        $livres-> pays = request('pays');
-        $livres-> date_parution = request('date_parution');
-        $livres-> type = request('type');
-        $livres ->save();
+        $locataires = new liste();
+        $locataires-> nom = request('nom');
+        $locataires-> prenom = request('prenom');
+        $locataires-> contact = request('contact');
+        $locataires-> coord_cour = request('coord_cour');
+        $locataires-> coord_maison = request('coord_maison');
+        $locataires-> role = request('role');
+        $locataires ->save();
         return view('Pages/success');
         
-    
-
-    }
-
+    } 
     /**
      * Display the specified resource.
      *
@@ -70,9 +67,11 @@ class ListeController extends Controller
      */
     public function show()
     {
-       $livres = DB::table('livres')->get();
-       return view('/Pages.liste',['livres'=>$livres]);
-    }
+      
+        $locataires = DB::table('liste')->get();
+        return view('/Pages.accueil',['locataires'=>$locataires]);
+
+    } 
 
     /**
      * Show the form for editing the specified resource.
@@ -82,7 +81,7 @@ class ListeController extends Controller
      */
     public function edit($id)
     {
-        return view('/ajout', compact('$livres'));
+        
     }
 
     /**
@@ -92,21 +91,8 @@ class ListeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        $validated = request() ->validate([
-
-            'nom_livre' =>['required'],
-            'nom_auteur' =>['required'],
-            'prenom_auteur' =>['required'],
-            'pays' =>['required'],
-            'date_parution' =>['required'],
-            'type' =>['required'],
-    
-        ]);
-            $id->update($validated);
-            return back();
-    }
+   
+   
 
     /**
      * Remove the specified resource from storage.
@@ -116,7 +102,8 @@ class ListeController extends Controller
      */
     public function destroy($id)
     {  
-        DB::delete('delete from livres where id =?',[$id]);
-        return 'vue';
+        $locataires = liste::find($id);
+        $locataires -> delete();
+        return back();
     }
 }

@@ -30,6 +30,9 @@ Route:: get('/deconnexion' , 'accueilController@deconnexion');
 Route:: get('/ajout' , 'ajoutController@formulaire');
 Route:: post('/ajout' , 'ajoutController@traitement');
 Route::resource('/liste', 'ListeController'); 
-Route::get('/delete/{id}', 'SupprimerController@destroy')->name('supprimer');
-Route::get('/update/{id}', 'SupprimerController@edit')->name('modifier');
-// Route::get('/Pages.liste', 'ajoutController@show'); 
+Route::resource('/cour', 'courController'); 
+Route::get('/cour', 'courController@show'); 
+Route::get('/liste', 'ListeController@show'); 
+
+// Route::get('/delete/{id}', 'SupprimerController@destroy')->name('supprimer');
+// Route::get('/update/{id}', 'SupprimerController@edit')->name('modifier');

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/success.css">
     
-    <title>Document</title>
+    <title>Félicitations</title>
 </head>
 <body>
 <div id='card' class="animated fadeIn">
@@ -30,10 +30,10 @@
   </div>
   <div id='lower-side'>
     <p id='message'>
-     Votre livre a bien été enrégistré <br>
+     Votre requete bien été enrégistré <br>
      <span class="mt-1 ">Merci</span> 
     </p>
-    <a href="/ajout" id="contBtn">Continuer</a>
+    <a href="/accueil" id="contBtn">Continuer</a>
   </div>
 </div>
 

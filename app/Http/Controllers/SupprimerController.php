@@ -9,7 +9,7 @@ class SupprimerController extends Controller
 {
     public function destroy($id)
     {  
-        DB::delete('delete from livres where id =?',[$id]);
+        DB::delete('delete from listes where id =?',[$id]);
         return back();
     }
 

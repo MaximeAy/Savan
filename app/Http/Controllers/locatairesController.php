@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class livreController extends Controller
+class locatairesController extends Controller
 {
-    public function livres()
+    public function locataires()
     {
         
     }

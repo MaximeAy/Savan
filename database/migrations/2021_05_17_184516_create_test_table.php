@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAjoutLivresTable extends Migration
+class CreateTestTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,8 @@ class CreateAjoutLivresTable extends Migration
      */
     public function up()
     {
-        Schema::create('ajout_livres', function (Blueprint $table) {
+        Schema::create('test', function (Blueprint $table) {
             $table->id();
-            $table->string('nom_livre');
-            $table->string('nom_auteur');
-            $table->string('prenom_auteur');
-            $table->string('pays');
-            $table->date('date_parution');
-            $table->string('type');
             $table->timestamps();
         });
     }
@@ -32,6 +26,6 @@ class CreateAjoutLivresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ajout_livres');
+        Schema::dropIfExists('test');
     }
 }

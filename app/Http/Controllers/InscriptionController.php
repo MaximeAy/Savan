@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\admin;
+use Illuminate\Support\Facades\Hash;
 
 class InscriptionController extends Controller
 {
@@ -24,14 +25,13 @@ class InscriptionController extends Controller
     
         $admin = new admin;
         $admin-> email = request('email');
-        $admin-> mdp = request('mdp');
-        $admin-> mdp_confirmation =request('mdp_confirmation');
+        $admin-> mdp = Hash::make(request('mdp'));
+        $admin-> mdp_confirmation = Hash::make(request('mdp_confirmation'));
     
     
         $admin ->save();
     
-        return 'Nous avons reçu votre email qui est ' . request('email') . 'Votre mot de passe est'. '' . request('mdp');
-        
+        return view('Pages/successInscription');
     }
 
 

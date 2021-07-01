@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\livre;
+use App\locataires;
 use Illuminate\Support\Facades\DB;
 
 
-class AjoutController extends Controller
+class locatairesController extends Controller
 {
     public function formulaire ()
     {
-        return view('Pages/ajout');
+        return view('Pages/accueil');
     }
 
     public function traitement()
@@ -26,17 +26,17 @@ class AjoutController extends Controller
     
         ]);
 
-        $livres = new livre();
-        $livres-> nom_livre = request('nom_livre');
-        $livres-> nom_auteur = request('nom_auteur');
-        $livres-> prenom_auteur = request('prenom_auteur');
-        $livres-> pays = request('pays');
-        $livres-> date_parution = request('date_parution');
-        $livres-> type = request('type');
+        $locataires = new locataires();
+        $locataires-> nom_livre = request('nom_livre');
+        $locataires-> nom_auteur = request('nom_auteur');
+        $locataires-> prenom_auteur = request('prenom_auteur');
+        $locataires-> pays = request('pays');
+        $locataires-> date_parution = request('date_parution');
+        $locataires-> type = request('type');
        
     
     
-        $livres ->save();
+        $locataires ->save();
     
         return view('Pages/success');
         

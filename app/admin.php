@@ -21,12 +21,13 @@ class admin extends Model implements Authenticatable
     {
         return $this->mdp;
     }
+    protected $fillable = [
+     'email', 'mdp','mdp_confirmation',
+    ];
+    
 
      
 }
-
-
-
 
 
 

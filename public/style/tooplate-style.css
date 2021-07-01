@@ -11,6 +11,10 @@ a:hover, a:focus, a.active {
     color: #58d5ff;
     text-decoration: none;
 }
+.education {
+    background: #f9fbfd;
+    padding-top: 100px;
+}
 
 .tm-welcome-section {
     height: 83vh;
@@ -81,29 +85,29 @@ a:hover, a:focus, a.active {
     border-radius: 0;
 }
 
-.form-control.tm-search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.form-control.tm-search-input::placeholder { 
     color: #fff;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
 }
 
-.form-control.tm-search-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #fff;
-}
-
-.form-control.tm-search-input::-ms-input-placeholder { /* Microsoft Edge */
+.form-control.tm-search-input:-ms-input-placeholder { 
     color: #fff;
 }
 
-.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.form-control.tm-search-input::-ms-input-placeholder { 
+    color: #fff;
+}
+
+.form-control::placeholder {
     color: #666666;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
 }
 
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.form-control:-ms-input-placeholder { 
     color: #666666;
 }
 
-.form-control::-ms-input-placeholder { /* Microsoft Edge */
+.form-control::-ms-input-placeholder { 
     color: #666666;
 }
 
@@ -161,9 +165,7 @@ a:hover, a:focus, a.active {
     width: 20%;
 }
 
-/*---------------*/
-/***** Sadie *****/
-/*---------------*/
+
 
 .grid figure {
     position: relative;
@@ -551,18 +553,18 @@ iframe { max-width: 100%; }
 
 /* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
-    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: translateX(-100%);  /* IE 9 */
-            transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateX(-100%); 
+        -ms-transform: translateX(-100%);  
+            transform: translateX(-100%);  
 
     -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
             transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
-    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: translateX(100%);  /* IE 9 */
-            transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateX(100%);  
+        -ms-transform: translateX(100%);  
+            transform: translateX(100%);  
 
 -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -576,15 +578,15 @@ iframe { max-width: 100%; }
 .loaded #loader-wrapper {
     visibility: hidden;
 
-    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: translateY(-100%);  /* IE 9 */
-            transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+    -webkit-transform: translateY(-100%);  
+        -ms-transform: translateY(-100%);  
+            transform: translateY(-100%);  
 
     -webkit-transition: all 0.3s 1s ease-out;
             transition: all 0.3s 1s ease-out;
 }
 
-/* JavaScript Turned Off */
+
 .no-js #loader-wrapper { display: none; }
 
 @media (min-width: 576px) {
